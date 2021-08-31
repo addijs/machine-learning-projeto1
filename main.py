@@ -1,3 +1,4 @@
+from decision_tree import decision_tree
 from sklearn.model_selection import train_test_split
 # from sklearn import metrics
 import pandas as pd
@@ -25,3 +26,6 @@ n3 = 20 # K = 20
 knn(n1, X_train, y_train, X_test, y_test)
 knn(n2, X_train, y_train, X_test, y_test)
 knn(n3, X_train, y_train, X_test, y_test)
+
+decision_tree(X_train, y_train, X_test, y_test)
+decision_tree(X_train, y_train, X_test, y_test, criterion="entropy")

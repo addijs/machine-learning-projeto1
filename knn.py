@@ -14,4 +14,5 @@ def knn(k, X_train, y_train, X_test, y_test):
 
     print("\nK = {} -> {}%".format(k, show))
     print(list(result))
+    print("\n")
     print(list(y_test))
