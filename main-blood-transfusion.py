@@ -6,12 +6,13 @@ import pandas as pd
 
 from knn import knn
 
-url = './data/iris.data'
+url = './data/transfusion.data'
 
 # Carregar base de dados
 dataset = pd.read_csv(url, header=None)
 
 columns = len(dataset.columns)
+
 y = dataset.loc[:, columns-1] # extrai a última coluna, que é o label
 X = dataset.loc[:, 0:columns-2]
 
